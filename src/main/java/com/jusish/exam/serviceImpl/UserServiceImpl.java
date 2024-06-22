@@ -9,11 +9,9 @@ import com.jusish.exam.repositories.UserRepository;
 import com.jusish.exam.services.UserService;
 import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.expression.ExpressionException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 @Service
 public class UserServiceImpl implements UserService {

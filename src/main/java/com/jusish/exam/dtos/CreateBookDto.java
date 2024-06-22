@@ -1,7 +1,5 @@
 package com.jusish.exam.dtos;
 
-import com.jusish.exam.models.User;
-
 public class CreateBookDto {
     private String title;
     private long user_id;

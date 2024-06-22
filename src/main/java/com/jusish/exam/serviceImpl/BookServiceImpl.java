@@ -6,7 +6,6 @@ import com.jusish.exam.models.User;
 import com.jusish.exam.repositories.BookRepository;
 import com.jusish.exam.repositories.UserRepository;
 import com.jusish.exam.services.BookService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

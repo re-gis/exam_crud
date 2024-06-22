@@ -1,6 +1,7 @@
 package com.jusish.exam.controllers;
 
 import com.jusish.exam.dtos.CreateBookDto;
+import com.jusish.exam.models.Book;
 import com.jusish.exam.serviceImpl.BookServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,7 @@ public class BookController {
         this.bookService = bookService;
     }
     @PostMapping("/create")
-    public ResponseEntity createBook(@RequestBody CreateBookDto dto)throws Exception{
+    public ResponseEntity<Book> createBook(@RequestBody CreateBookDto dto)throws Exception{
         return ResponseEntity.ok(bookService.createBook(dto));
     }
 }
